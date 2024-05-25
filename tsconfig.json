@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    /* Basic Options */
+    "target": "es2022", // Modern JavaScript target
+    "module": "commonjs", // CommonJS module system
+    "esModuleInterop": true, // Enables interoperability between CommonJS and ES Modules
+    "forceConsistentCasingInFileNames": true, // Enforces consistent casing in file names
+    "skipLibCheck": true, // Skips type checking of declaration files for faster builds
+    "strict": true, // Enables all strict type-checking options
+
+    /* Strictness Options */
+    "noImplicitAny": true, // Disallows variables with an implicit 'any' type
+    "strictNullChecks": true, // Ensures null and undefined are handled explicitly
+    "strictBindCallApply": true, // Ensures strict checking of bind, call, and apply methods
+    "strictFunctionTypes": true, // Ensures function types are checked strictly
+    "strictPropertyInitialization": true, // Ensures class properties are initialized correctly
+    "noImplicitThis": true, // Ensures 'this' expressions are typed correctly
+    "useUnknownInCatchVariables": true, // Ensures catch variables are of type 'unknown'
+
+    /* Module Resolution Options */
+    "moduleResolution": "node", // Uses Node.js module resolution
+    "resolveJsonModule": true, // Allows importing JSON files
+    "isolatedModules": true, // Ensures each file is treated as a separate module
+
+    /* Output Options */
+    "outDir": "./dist", // Specifies the output directory for compiled files
+    "sourceMap": true, // Generates source maps for debugging
+
+    /* Additional Options */
+    "allowJs": true, // Allows JavaScript files to be compiled
+    "declaration": true, // Generates declaration files (.d.ts)
+    "declarationMap": true, // Generates source maps for declaration files
+    "composite": true, // Enables project references
+    "lib": ["es2022", "dom"], // Includes standard library files
+    "baseUrl": ".", // Base directory for resolving non-relative module names
+    "paths": {
+      "@src/*": ["src/*"], // Path mapping for cleaner imports
+      "@tests/*": ["tests/*"]
+    }
+  },
+  "include": ["src/**/*", "tests/**/*"], // Includes source and test files
+  "exclude": ["node_modules", "dist"] // Excludes node_modules and dist directories
+}

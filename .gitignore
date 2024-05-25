@@ -1,0 +1,17 @@
+# Node modules
+node_modules/
+
+# Logs
+logs/
+*.log
+
+# Environment variables
+.env
+envKeys.ts
+
+# Build output
+dist/
+build/
+
+# 
+token_list
